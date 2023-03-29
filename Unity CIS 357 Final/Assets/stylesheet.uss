@@ -1,0 +1,62 @@
+.buttonStyle {
+    height: 95px;
+    width: 467px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: visible;
+    overflow: visible;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    -unity-text-align: middle-center;
+    font-size: 20px;
+    max-width: none;
+    max-height: initial;
+    background-color: rgb(168, 168, 168);
+}
+
+.buttonStyle:hover {
+    height: 95px;
+    width: 467px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: visible;
+    overflow: visible;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    -unity-text-align: middle-center;
+    font-size: 20px;
+    max-width: none;
+    max-height: initial;
+    background-color: rgb(125, 125, 125);
+}
+
+.buttonStyle:active {
+    height: 95px;
+    width: 467px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: visible;
+    overflow: visible;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    -unity-text-align: middle-center;
+    font-size: 20px;
+    max-width: none;
+    max-height: initial;
+    background-color: rgb(125, 125, 125);
+}
