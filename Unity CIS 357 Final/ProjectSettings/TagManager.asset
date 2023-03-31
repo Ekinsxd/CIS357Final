@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bullet
+  - Gate
+  - GateScore
+  - Enemy
+  - Buff
+  - Debuff
   layers:
   - Default
   - TransparentFX
@@ -15,10 +21,10 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Bullet
+  - Buffs
+  - Enemy
   - 
   - 
   - 
