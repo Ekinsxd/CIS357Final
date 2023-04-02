@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class cameraScript : MonoBehaviour
 {
-    private Rigidbody rb;
+    private GameObject Player;
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        rb.velocity = new Vector3(0, 0, 4);
+        Player = GameObject.Find("Player");
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Vector3 pos = new Vector3(transform.position.x, transform.position.y, Player.transform.position.z - 10);
+        transform.position = pos;
     }
 }

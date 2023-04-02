@@ -8,6 +8,8 @@ public class playerController : MonoBehaviour
     private Touch touch;
     private Rigidbody rb;
     public float speed;
+    public float swipeSpeed;
+
     public int score;
     public float fireRate;
     private float fireCooldown;
@@ -20,7 +22,7 @@ public class playerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.velocity = new Vector3(0, 0, speed);
         gc = GameObject.Find("GameController").GetComponent<GameController>();
-        fireCooldown = 1/fireRate;
+        fireCooldown = 1 / fireRate;
 
     }
 
@@ -28,18 +30,8 @@ public class playerController : MonoBehaviour
     void Update()
     {
 
-
-        // user tap
-        if (Input.touchCount > 0) 
-        {
-            touch = Input.GetTouch(0);
-    
-            Debug.Log(touch.position.x);
-            Debug.Log(touch.position.y);
-            Vector3 movePos = new Vector3((touch.position.x - 200) / 60, transform.position.y, transform.position.z);
-            transform.position = movePos;
-            Debug.Log("touch");
-        }
+        rb.velocity = new Vector3(0, 0, speed);
+        handleUserInput();
         
         fireCooldown -= Time.deltaTime;
 
@@ -47,8 +39,33 @@ public class playerController : MonoBehaviour
         {
             Shoot();
         }
-        rb.velocity = new Vector3(0, 0, speed);
+    }
 
+    void handleUserInput()
+    {
+        // user tap
+        if (Input.touchCount > 0) 
+        {
+            touch = Input.GetTouch(0);
+            Vector3 pos = new Vector3(touch.position.x, touch.position.y, 10);
+            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(pos);
+            Vector3 movePos = new Vector3(touchPosition.x, transform.position.y, transform.position.z);
+            
+            if (Mathf.Abs(touchPosition.x - transform.position.x) < 0.01) 
+            {
+                return;
+            }
+            else if (touchPosition.x < transform.position.x)
+            {
+                rb.velocity = new Vector3(-10, 0, speed);
+            }
+            else
+            {
+                rb.velocity = new Vector3(10, 0, speed);
+            }
+            // transform.position = movePos;
+            Debug.Log(touchPosition.x + " " + transform.position.x);
+        }
 
     }
 
@@ -59,14 +76,14 @@ public class playerController : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
-
         if (other.gameObject.tag == "Buff")
         {
             Debug.Log("increase");
             Destroy(other.gameObject);
             fireRate *= 1.05f;
+            fireCooldown = 1 / fireRate;
             rb.velocity = new Vector3(0, 0, speed);
         }
 
@@ -77,6 +94,9 @@ public class playerController : MonoBehaviour
             fireRate /= 1.3f;
             rb.velocity = new Vector3(0, 0, speed);
         }
+    }
+    void OnCollisionEnter(Collision other)
+    {
 
         transform.position += new Vector3(0,0,0.05f);
 
@@ -85,6 +105,13 @@ public class playerController : MonoBehaviour
             Debug.Log("Lose");
             //we lose, set animation to dead
             Destroy(gameObject);
+        }
+
+        if (other.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Lose");
+            //we lose, set animation to dead
+            // Destroy(gameObject);
         }
     }
 
