@@ -3,18 +3,26 @@
 public class ZombieCharacterControl : MonoBehaviour
 {
 
-    [SerializeField] private float m_moveSpeed = 1;
-    public float health;
+    private int health;
+    private int maxHealth;
 
+    [SerializeField] private float m_moveSpeed = 1;
     [SerializeField] private Animator m_animator = null;
     [SerializeField] private Rigidbody m_rigidBody = null;
 
-
     private GameObject player;
+    private GameController gc;
 
+
+    void Start()
+    {
+        gc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        maxHealth = Random.Range(1, 5);
+        health = maxHealth;
+    }
     private void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
         if (!m_animator) { gameObject.GetComponent<Animator>(); }
         if (!m_rigidBody) { gameObject.GetComponent<Animator>(); }
     }
@@ -23,6 +31,7 @@ public class ZombieCharacterControl : MonoBehaviour
     {
         if (health <= 0)
         {
+            gc.AddPoints(100 * maxHealth);
             Destroy(gameObject);
         }
 

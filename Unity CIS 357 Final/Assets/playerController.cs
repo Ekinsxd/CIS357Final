@@ -15,12 +15,12 @@ public class playerController : MonoBehaviour
     private float fireCooldown;
     public GameObject bulletPrefab;
     protected GameController gc;
+    protected bool isDead = false;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.velocity = new Vector3(0, 0, speed);
         gc = GameObject.Find("GameController").GetComponent<GameController>();
         fireCooldown = 1 / fireRate;
 
@@ -29,12 +29,14 @@ public class playerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (gc.getStarted() == true) {
+            rb.velocity = new Vector3(0, 0, 0);
+            return;// dont update if we are not started
+        }
         rb.velocity = new Vector3(0, 0, speed);
         handleUserInput();
         
         fireCooldown -= Time.deltaTime;
-
         if (fireCooldown < 0)
         {
             Shoot();
@@ -50,21 +52,7 @@ public class playerController : MonoBehaviour
             Vector3 pos = new Vector3(touch.position.x, touch.position.y, 10);
             Vector3 touchPosition = Camera.main.ScreenToWorldPoint(pos);
             Vector3 movePos = new Vector3(touchPosition.x, transform.position.y, transform.position.z);
-            
-            if (Mathf.Abs(touchPosition.x - transform.position.x) < 0.01) 
-            {
-                return;
-            }
-            else if (touchPosition.x < transform.position.x)
-            {
-                rb.velocity = new Vector3(-10, 0, speed);
-            }
-            else
-            {
-                rb.velocity = new Vector3(10, 0, speed);
-            }
-            // transform.position = movePos;
-            Debug.Log(touchPosition.x + " " + transform.position.x);
+            transform.position = movePos;
         }
 
     }
@@ -97,9 +85,6 @@ public class playerController : MonoBehaviour
     }
     void OnCollisionEnter(Collision other)
     {
-
-        transform.position += new Vector3(0,0,0.05f);
-
         if (other.gameObject.tag == "Block")
         {
             Debug.Log("Lose");
@@ -107,11 +92,14 @@ public class playerController : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (other.gameObject.tag == "Enemy")
+        if (!isDead && other.gameObject.tag == "Enemy")
         {
             Debug.Log("Lose");
+            Destroy(other.gameObject);
+            Time.timeScale = 0f;
+            isDead = true;
+            gc.setLost();
             //we lose, set animation to dead
-            // Destroy(gameObject);
         }
     }
 
