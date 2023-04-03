@@ -29,6 +29,12 @@ public class ZombieCharacterControl : MonoBehaviour
 
     private void Update()
     {
+        if (gc.getPaused() == true)
+        {
+            m_moveSpeed = 0;
+            return;// dont update if we are not started
+        }
+
         if (health <= 0)
         {
             gc.AddPoints(100 * maxHealth);

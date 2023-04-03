@@ -8,14 +8,15 @@ public class GameController : MonoBehaviour
     int score = 0;
     TextMeshProUGUI label;
     protected float fireRate;
-    protected bool started = false;
+    protected bool paused = false;
     public MenuFunctions menuFunctions;
     
     // Start is called before the first frame update
     void Start()
     {
         label = GameObject.Find("ScoreLabel").GetComponent<TMPro.TextMeshProUGUI>();
-        started = false;
+        paused = false;
+        AddPoints(score);
     }
 
     // Update is called once per frame
@@ -27,17 +28,17 @@ public class GameController : MonoBehaviour
     public void setLost() 
     {
         menuFunctions.LoadGameOver();
-        setStarted(false);
+        setPaused(false);
     }
 
-    public bool getStarted() 
+    public bool getPaused() 
     {
-        return started;
+        return paused;
     }
 
-    public void setStarted(bool didStart) 
+    public void setPaused(bool isPaused) 
     {
-        started = didStart;
+        paused = isPaused;
     }
 
     public void AddPoints(int points){

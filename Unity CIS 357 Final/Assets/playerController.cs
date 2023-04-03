@@ -29,7 +29,7 @@ public class playerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gc.getStarted() == true) {
+        if (gc.getPaused() == true || isDead) {
             rb.velocity = new Vector3(0, 0, 0);
             return;// dont update if we are not started
         }

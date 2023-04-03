@@ -26,7 +26,7 @@ public class MenuFunctions: MonoBehaviour
     public void PauseGame()
     {
         pauseMenu.SetActive(true);
-        gc.setStarted(false);
+        gc.setPaused(false);
         Time.timeScale = 0f;
         isPaused = true;
     
@@ -35,7 +35,7 @@ public class MenuFunctions: MonoBehaviour
     public void ResumeGame()
     {
         pauseMenu.SetActive(false);
-        gc.setStarted(true);
+        gc.setPaused(true);
         Time.timeScale = 1f;
         isPaused = false;
 
