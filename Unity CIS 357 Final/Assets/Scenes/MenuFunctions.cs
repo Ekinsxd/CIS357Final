@@ -68,13 +68,15 @@ public class MenuFunctions: MonoBehaviour
         SceneManager.LoadScene("game");
     }
 
+    public void DestroyAd()
+    {
+        interstitialAd.Destroy();
+        interstitialAd = null;
+    }
+
     public void LoadInterstitialAd()
     {
-        if (interstitialAd != null)
-        {
-            interstitialAd.Destroy();
-            interstitialAd = null;
-        }
+        if (interstitialAd != null){DestroyAd();}
 
         var adRequest = new AdRequest.Builder()
                 .AddKeyword("unity-admob-sample")
