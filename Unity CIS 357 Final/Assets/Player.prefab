@@ -17,6 +17,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 94d76f859419a5048a2d6cf80ef45f88, type: 2}
+    - target: {fileID: 8442623690597485434, guid: 5bf81c1e7c3fa764c9ad1ad61f333094,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8442623690604717372, guid: 5bf81c1e7c3fa764c9ad1ad61f333094,
         type: 3}
       propertyPath: m_RootOrder
@@ -282,8 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb9cc56059325140a6e434eea024590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
-  swipeSpeed: 0
+  speed: 8
   score: 0
   fireRate: 3
   bulletPrefab: {fileID: 5078318573834932857, guid: d27c2792245cf2443b46072363aa9b63,

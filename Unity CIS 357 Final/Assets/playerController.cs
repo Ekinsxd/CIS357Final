@@ -8,7 +8,6 @@ public class playerController : MonoBehaviour
     private Touch touch;
     private Rigidbody rb;
     public float speed;
-    public float swipeSpeed;
 
     public int score;
     public float fireRate;

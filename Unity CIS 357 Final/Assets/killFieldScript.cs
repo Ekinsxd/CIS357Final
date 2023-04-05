@@ -13,7 +13,7 @@ public class killFieldScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Vector3 pos = new Vector3(transform.position.x, transform.position.y, Player.transform.position.z - 5);
         transform.position = pos;
@@ -21,6 +21,7 @@ public class killFieldScript : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
+        Debug.Log("Collision");
         if (other.gameObject.tag == "Buff" ||
             other.gameObject.tag == "Debuff" ||
             other.gameObject.tag == "Enemy")
@@ -31,6 +32,7 @@ public class killFieldScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Trigger");
         if (other.gameObject.tag == "Buff" ||
             other.gameObject.tag == "Debuff" ||
             other.gameObject.tag == "Enemy")

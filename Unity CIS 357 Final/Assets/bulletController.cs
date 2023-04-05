@@ -9,9 +9,9 @@ public class bulletController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bulletLife = 4f;
+        bulletLife = 2f;
         rb = GetComponent<Rigidbody>();
-        rb.velocity = new Vector3(0, 0, 10);
+        rb.velocity = new Vector3(0, 0, 14);
     }
 
     // Update is called once per frame
