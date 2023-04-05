@@ -45,6 +45,9 @@ public class MenuFunctions: MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Start Screen");
+        DestroyAd();
+        BannerAd.DestroyAd();
+
         isPaused = false;
 
     }
@@ -70,13 +73,16 @@ public class MenuFunctions: MonoBehaviour
 
     public void DestroyAd()
     {
-        interstitialAd.Destroy();
-        interstitialAd = null;
+        if (interstitialAd != null)
+        {
+            interstitialAd.Destroy();
+            interstitialAd = null;
+        }
     }
 
     public void LoadInterstitialAd()
     {
-        if (interstitialAd != null){DestroyAd();}
+        DestroyAd();
 
         var adRequest = new AdRequest.Builder()
                 .AddKeyword("unity-admob-sample")

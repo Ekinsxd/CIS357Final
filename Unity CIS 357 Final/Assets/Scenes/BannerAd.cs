@@ -19,7 +19,7 @@ public class BannerAd : MonoBehaviour
     private string _adUnitId = "unused";
     #endif
 
-    BannerView _bannerView;
+    static BannerView _bannerView;
 
     public void CreateBannerView()
     {
@@ -41,7 +41,7 @@ public class BannerAd : MonoBehaviour
     }
 
 
-    public void DestroyAd()
+    public static void DestroyAd()
     {
         if (_bannerView != null)
         {
