@@ -44,9 +44,10 @@ public class MenuFunctions: MonoBehaviour
     public void GoToMainMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Start Screen");
         DestroyAd();
         BannerAd.DestroyAd();
+        SceneManager.LoadScene("Start Screen");
+        
 
         isPaused = false;
 
