@@ -10,8 +10,8 @@ public class BannerAd : MonoBehaviour
         this.LoadAd();
     }
 
-    #if UNITY_ANDROID
-    private string _adUnitId = "ca-app-pub-3940256099942544/6300978111";
+#if UNITY_ANDROID
+    private string _adUnitId = "ca-app-pub-6030577452047670/9777319418";//"ca-app-pub-3940256099942544/6300978111";
     #else
     private string _adUnitId = "unused";
     #endif

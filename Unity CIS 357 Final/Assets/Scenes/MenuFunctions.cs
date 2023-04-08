@@ -10,11 +10,11 @@ public class MenuFunctions: MonoBehaviour
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject gameOverMenu;
     public static bool isPaused = false;
-    private GameController gc;
+    [SerializeField] GameController gc;
 
     // These ad units are configured to always serve test ads.
     #if UNITY_ANDROID
-        private string _adUnitId = "ca-app-pub-3940256099942544/1033173712";
+        private string _adUnitId = "ca-app-pub-6030577452047670/6564283970"; //"ca-app-pub-3940256099942544/4411468910";
     #elif UNITY_IPHONE
         private string _adUnitId = "ca-app-pub-3940256099942544/4411468910";
     #else
@@ -26,7 +26,7 @@ public class MenuFunctions: MonoBehaviour
     public void PauseGame()
     {
         pauseMenu.SetActive(true);
-        gc.setPaused(false);
+        gc.setPaused(true);
         Time.timeScale = 0f;
         isPaused = true;
     
@@ -35,7 +35,7 @@ public class MenuFunctions: MonoBehaviour
     public void ResumeGame()
     {
         pauseMenu.SetActive(false);
-        gc.setPaused(true);
+        gc.setPaused(false);
         Time.timeScale = 1f;
         isPaused = false;
 

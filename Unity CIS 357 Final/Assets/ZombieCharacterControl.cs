@@ -34,6 +34,7 @@ public class ZombieCharacterControl : MonoBehaviour
             m_moveSpeed = 0;
             return;// dont update if we are not started
         }
+        else { m_moveSpeed = 1; }
 
         if (health <= 0)
         {
