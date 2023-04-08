@@ -7,9 +7,6 @@ public class BannerAd : MonoBehaviour
 {
     public void Start()
     {
-        MobileAds.Initialize((InitializationStatus initStatus) =>
-        {   
-        });
         this.LoadAd();
     }
 
