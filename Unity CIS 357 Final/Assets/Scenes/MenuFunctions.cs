@@ -22,6 +22,10 @@ public class MenuFunctions: MonoBehaviour
     #endif
 
     private InterstitialAd interstitialAd;
+    public void Start()
+    {
+        this.LoadInterstitialAd();
+    }
 
     public void PauseGame()
     {
@@ -55,7 +59,6 @@ public class MenuFunctions: MonoBehaviour
 
     public void LoadGameOver()
     {
-        this.LoadInterstitialAd();
         this.ShowAd();
         this.RegisterReloadHandler(interstitialAd);
 
