@@ -31,25 +31,23 @@ public class worldGenerator : MonoBehaviour
             leftRoad.transform.position = new Vector3(leftRoad.transform.position.x, leftRoad.transform.position.y, leftRoad.transform.position.z + 10);
             rightRoad.transform.position = new Vector3(rightRoad.transform.position.x, rightRoad.transform.position.y, rightRoad.transform.position.z + 10);
 
-            // generate enemy
-            if (Random.Range(0, 2) == 0)
+            for (int i = 0; i < 5; i++)
             {
-                Instantiate(Enemy, new Vector3(Random.Range(-3, 3), 0, Player.transform.position.z + 30 + Random.Range(-1, 7)), Quaternion.identity);
-            }
-            // generate powerup
-            if (Random.Range(0, 2) == 0)
-            {
-                Instantiate(buff, new Vector3(Random.Range(-3, 3), 0, Player.transform.position.z + 30 + Random.Range(-1, 7)), Quaternion.identity);
-            }
-            // generate powerup
-            if (Random.Range(0, 2) == 0)
-            {
-                Instantiate(buff, new Vector3(Random.Range(-3, 3), 0, Player.transform.position.z + 30 + Random.Range(-1, 7)), Quaternion.identity);
-            }
-            // generate powerup
-            if (Random.Range(0, 2) == 0)
-            {
-                Instantiate(debuff, new Vector3(Random.Range(-3, 3), 0, Player.transform.position.z + 30 + Random.Range(-1, 7)), Quaternion.identity);
+                // generate enemy
+                if (Random.Range(0, 100) <= 15)
+                {
+                    Instantiate(Enemy, new Vector3(Random.Range(-2, 2), 0, Player.transform.position.z + 25 + i * 2), Quaternion.identity);
+                }
+                // generate powerup
+                else if (Random.Range(0, 4) == 0)
+                {
+                    Instantiate(buff, new Vector3(Random.Range(-3, 3), 0, Player.transform.position.z + 30 + i * 2), Quaternion.identity);
+                    Instantiate(buff, new Vector3(Random.Range(-3, 3), 0, Player.transform.position.z + 30 + i * 2), Quaternion.identity);
+                }
+                else if (Random.Range(0, 2) == 0) {
+                    Instantiate(debuff, new Vector3(Random.Range(-3, 3), 0, Player.transform.position.z + 30 + i * 2), Quaternion.identity);
+                }
+
             }
 
         }

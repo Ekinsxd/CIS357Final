@@ -71,6 +71,7 @@ public class playerController : MonoBehaviour
             Destroy(other.gameObject);
             fireRate *= 1.05f;
             fireCooldown = 1 / fireRate;
+            gc.AddPoints(10);
             rb.velocity = new Vector3(0, 0, speed);
         }
 
@@ -79,6 +80,7 @@ public class playerController : MonoBehaviour
             Debug.Log("decrease");
             Destroy(other.gameObject);
             fireRate /= 1.3f;
+            gc.AddPoints(-10);
             rb.velocity = new Vector3(0, 0, speed);
         }
     }

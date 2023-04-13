@@ -41,8 +41,15 @@ public class GameController : MonoBehaviour
         paused = isPaused;
     }
 
+    public int getMaxHealth() {
+        return score / 100 + 1;
+    }
+
     public void AddPoints(int points){
         score += points;
+        if (score < 0) {
+            score = 0;
+        }
         label.text = "Score: " + score;
     }
 

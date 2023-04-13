@@ -18,7 +18,7 @@ public class ZombieCharacterControl : MonoBehaviour
     {
         gc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         player = GameObject.FindGameObjectWithTag("Player");
-        maxHealth = Random.Range(1, 5);
+        maxHealth = Random.Range(1, gc.getMaxHealth());
         health = maxHealth;
     }
     private void Awake()
