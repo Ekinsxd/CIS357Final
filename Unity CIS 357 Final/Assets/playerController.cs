@@ -58,9 +58,10 @@ public class playerController : MonoBehaviour
 
     void Shoot() 
     {
-        var bullet = Instantiate(bulletPrefab, transform.position + new Vector3(0, 1, .5f), Quaternion.identity);
+        var bullet = Instantiate(bulletPrefab, 
+                    transform.position + new Vector3(0, 1, .5f),
+                    Quaternion.identity);
         fireCooldown = 1 / fireRate;
-
     }
 
     void OnTriggerEnter(Collider other)

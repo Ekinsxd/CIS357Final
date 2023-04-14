@@ -42,9 +42,8 @@ public class ZombieCharacterControl : MonoBehaviour
             Destroy(gameObject);
         }
 
-        transform.position += transform.forward * m_moveSpeed * Time.deltaTime;
         transform.LookAt(player.transform);
-
+        transform.position += transform.forward * m_moveSpeed * Time.deltaTime;
         m_animator.SetFloat("MoveSpeed", m_moveSpeed);
 
     }
