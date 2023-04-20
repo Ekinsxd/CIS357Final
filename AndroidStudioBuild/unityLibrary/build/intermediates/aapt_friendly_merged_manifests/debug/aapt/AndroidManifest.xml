@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.unity3d.player" >
+    package="com.unity3d.player"
+    android:versionCode="1"
+    android:versionName="1.0.2" >
 
     <uses-sdk
         android:minSdkVersion="26"
@@ -67,11 +69,11 @@
 
         <receiver
             android:name="com.unity.androidnotifications.UnityNotificationManager"
-            android:exported="true" />
+            android:exported="false" />
         <receiver
             android:name="com.unity.androidnotifications.UnityNotificationRestartOnBootReceiver"
             android:enabled="false"
-            android:exported="true" >
+            android:exported="false" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
