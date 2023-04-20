@@ -634,7 +634,7 @@
             "outputFile": "C:\\Users\\ekins\\Documents\\Github Repos\\F22\\CIS357Final\\AndroidStudioBuild\\launcher\\build\\intermediates\\res\\merged\\debug\\values-v23_values-v23.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\ekins\\.gradle\\caches\\transforms-2\\files-2.1\\3b0d07dccdf0200bc1b6b2733ffe9030\\androidx.work.work-runtime-2.7.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\ekins\\.gradle\\caches\\transforms-2\\files-2.1\\3b1dc1fe3f31d26ade3a10fc786cc628\\androidx.work.work-runtime-2.7.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -5609,7 +5609,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ekins\\.gradle\\caches\\transforms-2\\files-2.1\\18c8699e3914b6cd4c3aa6735fd8639a\\com.google.android.gms.play-services-ads-lite-22.0.0\\res\\values\\values.xml",
+                    "source": "C:\\Users\\ekins\\.gradle\\caches\\transforms-2\\files-2.1\\42d91e00c4dc72fa86c0c38778d623cf\\com.google.android.gms.play-services-ads-lite-22.0.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,14",
                         "startColumns": "0,0",
@@ -5625,40 +5625,6 @@
                         "endLines": "188,207",
                         "endColumns": "8,20",
                         "endOffsets": "13681,14510"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ekins\\.gradle\\caches\\transforms-2\\files-2.1\\3b0d07dccdf0200bc1b6b2733ffe9030\\androidx.work.work-runtime-2.7.0\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,120,190,254",
-                        "endColumns": "64,69,63,60",
-                        "endOffsets": "115,185,249,310"
-                    },
-                    "to": {
-                        "startLines": "4,5,6,7",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "226,291,361,425",
-                        "endColumns": "64,69,63,60",
-                        "endOffsets": "286,356,420,481"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ekins\\.gradle\\caches\\transforms-2\\files-2.1\\efb193fa5c981172513a4a7d445e3973\\androidx.startup.startup-runtime-1.0.0\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "82",
-                        "endOffsets": "133"
-                    },
-                    "to": {
-                        "startLines": "109",
-                        "startColumns": "4",
-                        "startOffsets": "6798",
-                        "endColumns": "82",
-                        "endOffsets": "6876"
                     }
                 },
                 {
@@ -5736,6 +5702,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\ekins\\.gradle\\caches\\transforms-2\\files-2.1\\3b1dc1fe3f31d26ade3a10fc786cc628\\androidx.work.work-runtime-2.7.0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,120,190,254",
+                        "endColumns": "64,69,63,60",
+                        "endOffsets": "115,185,249,310"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "226,291,361,425",
+                        "endColumns": "64,69,63,60",
+                        "endOffsets": "286,356,420,481"
+                    }
+                },
+                {
                     "source": "C:\\Users\\ekins\\.gradle\\caches\\transforms-2\\files-2.1\\0e3f4b92cdfe1f27ebe42738bdc2b14c\\androidx.browser.browser-1.4.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
@@ -5769,6 +5752,23 @@
                         "endLines": "14,15,16,17,18,19,20,21,111,112,113,114,115,116,117,118,120,121,122,123,124,125,126,127,128,457,476",
                         "endColumns": "89,79,89,89,79,80,79,79,104,180,124,106,179,122,115,102,187,104,180,124,174,147,62,61,78,20,20",
                         "endOffsets": "980,1060,1150,1240,1320,1401,1481,1561,7038,7219,7344,7451,7631,7754,7870,7973,8328,8433,8614,8739,8914,9062,9125,9187,9266,28881,29298"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ekins\\.gradle\\caches\\transforms-2\\files-2.1\\87f8a95115b04fcc54c310de790f06e6\\androidx.startup.startup-runtime-1.0.0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "82",
+                        "endOffsets": "133"
+                    },
+                    "to": {
+                        "startLines": "109",
+                        "startColumns": "4",
+                        "startOffsets": "6798",
+                        "endColumns": "82",
+                        "endOffsets": "6876"
                     }
                 }
             ]

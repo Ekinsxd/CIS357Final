@@ -1,2 +1,0 @@
-com/tranetvuro/UnityCIS357Final/BuildConfig.java
- com.tranetvuro.UnityCIS357Final.BuildConfig

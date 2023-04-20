@@ -87,17 +87,9 @@ public class playerController : MonoBehaviour
     }
     void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Block")
-        {
-            Debug.Log("Lose");
-            //we lose, set animation to dead
-            Destroy(gameObject);
-        }
-
         if (!isDead && other.gameObject.tag == "Enemy")
         {
             Debug.Log("Lose");
-            Destroy(other.gameObject);
             Time.timeScale = 0f;
             isDead = true;
             gc.setLost();

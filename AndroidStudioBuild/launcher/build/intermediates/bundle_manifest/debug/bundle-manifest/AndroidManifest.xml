@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tranetvuro.UnityCIS357Final"
+    package="com.DefaultCompany.UnityCIS357Final"
     android:installLocation="preferExternal"
     android:versionCode="1"
     android:versionName="1.0.2" >
@@ -119,7 +119,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.tranetvuro.UnityCIS357Final.androidx-startup"
+            android:authorities="com.DefaultCompany.UnityCIS357Final.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.work.WorkManagerInitializer"
@@ -234,7 +234,7 @@
 
         <provider
             android:name="com.google.android.gms.ads.MobileAdsInitProvider"
-            android:authorities="com.tranetvuro.UnityCIS357Final.mobileadsinitprovider"
+            android:authorities="com.DefaultCompany.UnityCIS357Final.mobileadsinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
