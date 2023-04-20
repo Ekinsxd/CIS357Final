@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "1A281FDF600CAV",
+    "m_SelectedDeviceId": "emulator-5554",
     "m_SelectedPackage": {
-        "deviceId": "1A281FDF600CAV",
-        "name": "com.DefaultCompany.UnityCIS357Final",
-        "processId": 22444,
+        "deviceId": "emulator-5554",
+        "name": "com.tranetvuro.UnityCIS357Final",
+        "processId": 7386,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -18,6 +18,18 @@
             "deviceId": "1A281FDF600CAV",
             "name": "com.DefaultCompany.UnityCIS357Final",
             "processId": 22444,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.tranetvuro.UnityCIS357Final",
+            "processId": 6957,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.tranetvuro.UnityCIS357Final",
+            "processId": 7386,
             "exited": false
         }
     ],

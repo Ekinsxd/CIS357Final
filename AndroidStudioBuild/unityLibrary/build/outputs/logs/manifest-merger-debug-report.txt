@@ -3,24 +3,12 @@ manifest
 ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:2:1-32:12
 INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:2:1-32:12
 INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:2:1-32:12
 	package
 		ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:2:70-98
 		INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml
-	android:versionName
-		INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:2:1-32:12
-		INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:2:99-145
-	android:versionCode
-		INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:2:1-32:12
-		INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:2:11-69
 application
@@ -96,9 +84,9 @@ ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBu
 	android:name
 		ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:16:16-43
 receiver#com.unity.androidnotifications.UnityNotificationManager
-ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:17:5-113
+ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:17:5-112
 	android:exported
-		ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:17:86-110
+		ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:17:86-109
 	android:name
 		ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:17:15-85
 receiver#com.unity.androidnotifications.UnityNotificationRestartOnBootReceiver
@@ -106,7 +94,7 @@ ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBu
 	android:enabled
 		ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:18:100-123
 	android:exported
-		ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:18:124-148
+		ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:18:124-147
 	android:name
 		ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\src\main\AndroidManifest.xml:18:15-99
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED

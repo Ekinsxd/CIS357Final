@@ -3,24 +3,16 @@ manifest
 ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:2:1-7:12
 INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:2:1-7:12
 INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:2:1-7:12
 	package
 		ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:2:70-100
 		INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml
 		INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml
 	android:versionName
 		ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:2:101-126
-		INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml
-		INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:2:11-69
 	android:versionCode
 		ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:2:127-150
-		INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml
-		INJECTED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml
 application
 ADDED from C:\Users\ekins\Documents\Github Repos\F22\CIS357Final\AndroidStudioBuild\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:3:3-6:17
 uses-library#org.apache.http.legacy

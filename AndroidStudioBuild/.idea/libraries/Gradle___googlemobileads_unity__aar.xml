@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: :googlemobileads-unity:@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4980ddaaa9c35d2d8f3dff82bc1d568f/googlemobileads-unity/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4980ddaaa9c35d2d8f3dff82bc1d568f/googlemobileads-unity/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4980ddaaa9c35d2d8f3dff82bc1d568f/googlemobileads-unity/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7b13c5d88b9687935f6633593e85c7bc/transformed/googlemobileads-unity/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7b13c5d88b9687935f6633593e85c7bc/transformed/googlemobileads-unity/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7b13c5d88b9687935f6633593e85c7bc/transformed/googlemobileads-unity/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

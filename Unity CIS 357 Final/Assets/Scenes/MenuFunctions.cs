@@ -60,7 +60,6 @@ public class MenuFunctions: MonoBehaviour
     public void LoadGameOver()
     {
         this.ShowAd();
-        this.RegisterReloadHandler(interstitialAd);
 
         gameOverMenu.SetActive(true);
         Time.timeScale = 0f;
@@ -112,7 +111,11 @@ public class MenuFunctions: MonoBehaviour
 
     public void ShowAd()
     {
-        if (interstitialAd != null && interstitialAd.CanShowAd()){interstitialAd.Show();}
+        if (interstitialAd != null && interstitialAd.CanShowAd())
+        {
+            interstitialAd.Show();
+            this.RegisterReloadHandler(interstitialAd);
+        }
         else{Debug.LogError("Interstitial ad is not ready yet.");}
     }
 
